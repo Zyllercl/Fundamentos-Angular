@@ -1,15 +1,30 @@
 
 <!-- Agregar expresiones a la interpolacion -->
-    <!-- 
-        Ej:
-            Edad: {{ edad + 1 }}
-    -->
-    <!-- Interpolacion de una variable privada -->
-    <!-- 
-        La variable se debe llamar desde un metodo
-        Ej:
-            Edad: {{ get_edad() }}
-    -->
+<!-- 
+    Ej:
+        Edad: {{ edad + 1 }}
+    
+    - Testear en personas.component.html
+-->
+
+<!-- Interpolacion de una variable privada -->
+<!-- 
+    /* Atributos */ 
+    Ej:
+        private edad: number = 30 
+    
+    /* Para obtener un atributo privado se debe agregar un metodo */
+    Ej:
+        get_edad(): number {
+            return this.edad
+        }
+    
+    /* La variable se debe llamar desde un metodo */
+    Ej:
+        Edad: {{ get_edad() }}
+    
+    - Testear en personas.component.html
+-->
 
 <!-- Template Reference Variable  -->
 <!-- 

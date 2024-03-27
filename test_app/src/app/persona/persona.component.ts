@@ -9,21 +9,5 @@ export class PersonaComponent {
   /* Atributos */
   nombre: string = 'Bellamy';
   apellido: string = 'Blake';
-  edad: number = 30
-
-  
-  /* Atributos */
-  /* 
-    Ej:
-      private edad: number = 30 
-  */
-  
-  /* Para obtener un atributo privado se debe agregar un metodo */
-  /*
-    Ej:
-      get_edad(): number {
-      return this.edad
-      }
-  */
-  
+  edad: number = 30  
 }
