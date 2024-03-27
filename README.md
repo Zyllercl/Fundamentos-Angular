@@ -21,7 +21,7 @@ ng serve -o
 
 ### Instalacion npm
 ```bash
-# Cuando se clone el repositorio se requiere instalar el modulo 'node_modules' para ello se debe ejecutar el siguiente comando:
+Cuando se clone el repositorio se requiere instalar el modulo 'node_modules' para ello se debe ejecutar el siguiente comando:
 npm install
 ```
 
@@ -36,22 +36,26 @@ npm install
 ```
 
 ## Crear un componente (Automatico - CLI)
-Crear un componente de manera automatica por CLI configura automaticamente los archivos necesarios para poder ocupar el componente, es decir, se agregara el nuevo componente automaticamente al archivo 'app.module.ts'
 ```bash
+Crear un componente de manera automatica por CLI, configura automaticamente los archivos necesarios para poder ocupar el componente, es decir, se agregara el nuevo componente automaticamente al archivo 'app.module.ts'
+
 ng generate component 'nombre_componente'
 o
 ng g c 'nombre_componente'
+
+# Una vez creado el componente lo mandaremos a renderizar en el html de 'personas.component.html'
 ```
-1.- Una vez creado el componente lo mandaremos a renderizar en el html de 'personas.component.html'
+
 
 ## Crear un componente inline
 ```bash
 ng g c persona -s -t
-```
 
 Parametros:
     -s -> Hoja de estilo inline
     -t -> Codigo HTML inline
+```
+
 
 # Instalar Bootstrap
 ```bash
@@ -61,18 +65,21 @@ npm install bootstrap jquery @popperjs/core
 ```
 
 ## Agregar Bootstrap al archivo 'angular.json'
+
+```bash
 1.- Abrir el archivo 'angular.json'
 2.- Dirigirse hasta el arreglo "styles": []
 3.- Agregar la siguiente linea de codigo
-```bash
+
 "styles": [
               "src/styles.css",
           ->  "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
 ```
+```bash
 4.- Dirigirse hasta el arreglo "scripts": []
 5.- Agregar la siguiente linea de codigo
-```bash
+
 "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/@popperjs/core/dist/umd/popper.min.js",    
