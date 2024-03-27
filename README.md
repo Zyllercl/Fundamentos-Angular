@@ -26,12 +26,14 @@ npm install
 ```
 
 # Crear un componente (Manual)
+```python
 1.- Crear una carpeta en 'src/app' con el 'nombre_componente'
 2.- Crear un archivo llamado TypeScript 'nombre_componente'.component.ts
 3.- Crear un componente dentro del archivo creado (parte 2)
 4.- Crear un archivo html llamado 'nombre_componente'.component.html
 5.- Registrar el nuevo componente en el archivo '/src/app/app.module.ts'
 5.1- Agregar el componente creado en el @NgModule -> declarations (Revisar archivo app.module.ts)
+```
 
 ## Crear un componente (Automatico - CLI)
 Crear un componente de manera automatica por CLI configura automaticamente los archivos necesarios para poder ocupar el componente, es decir, se agregara el nuevo componente automaticamente al archivo 'app.module.ts'
